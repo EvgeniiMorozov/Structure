@@ -17,10 +17,17 @@ p {
     margin: 0;
 }
 
+/*   Блок "Преимущества"   */
 .features {
     background-color: #f4f4f4;
+    border: 1px solid black;
+    padding: 50px 0;
 }
 
+/*   Шапка блока "Преимущества"   */
+.features-header {
+    margin-bottom: 36px;
+}
 .features-header__block {
     background-color: transparent;
     display: inline-block;
@@ -42,3 +49,34 @@ p {
     font-weight: 400;
     min-height: 40px;
 }
+
+/*   Конец шапки блока "Преимущества"   */
+
+/*   Блок описания преимуществ   */
+.features-topic__block {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 28px 18px 28px 10px;
+    margin-bottom: 30px;
+}
+
+.features-topic__img {
+    width: 23%;
+    text-align: center;
+}
+
+.features-topic__text {
+    width: 77%;
+}
+
+.features-topic__title {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.features-topic__description {
+    font-size: 14px;
+}
+
+/*   Конец блоков "Преимущества" описания преимуществ   */
