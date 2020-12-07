@@ -28,6 +28,7 @@ p {
 .features-header {
     margin-bottom: 36px;
 }
+
 .features-header__block {
     background-color: transparent;
     display: inline-block;
@@ -80,3 +81,54 @@ p {
 }
 
 /*   Конец блоков "Преимущества" описания преимуществ   */
+
+/*   Блок "Наша продукция"   */
+.products {
+    background-color: #ffffff;
+    border: 1px solid green;
+    text-align: center;
+    padding: 58px 0 72px 0;
+}
+
+.products__title {
+    color: #313131;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.products__block {
+    border: 1px solid brown;
+}
+
+.products__img {
+    border: 1px solid brown;
+}
+
+.products__name {
+    color: #313131;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.products__button-o {
+    border: 1px solid #373737;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+    opacity: 0.5;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 18px 24px 16px 26px;
+}
+
+.products__button {
+    background-color: #ff9d00;
+    border: 1px solid #ff9d00;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 18px 24px 16px 26px;
+}
