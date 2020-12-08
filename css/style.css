@@ -108,6 +108,10 @@ p {
     margin-bottom: 20px;
 }
 
+.products__img img {
+    max-width: 100%;
+}
+
 .products h3 {
     color: #313131;
     font-size: 20px;
@@ -116,31 +120,26 @@ p {
 }
 
 .products button {
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+    padding: 16px 24px 16px 24px;
     margin-left: 12px;
+
 }
+
 .products__button-o {
     background-color: transparent;
     border: 1px solid #373737;
-    border-radius: 2px;
     opacity: 0.5;
-    outline: none;
-    cursor: pointer;
-    opacity: 0.5;
-    font-size: 15px;
-    font-weight: 400;
-    padding: 17px 24px 14px 26px;
 }
 
 .products__button {
     background-color: #ff9d00;
     border: 1px solid #ff9d00;
-    border-radius: 2px;
-    outline: none;
-    cursor: pointer;
     color: #ffffff;
-    font-size: 15px;
-    font-weight: 400;
-    padding: 17px 24px 14px 26px;
 }
 
 /*   Эффекты кнопок при наведении   */
@@ -203,4 +202,73 @@ p {
     transition: all 0.7s;
     width: 100%;
     height: 2px;
+}
+
+/*   Блок медиазапросов для адаптации под разные разрещения экранов   */
+@media screen and (max-width: 1024px) {
+
+    .features-header__title {
+        font-size: 32px;
+    }
+
+    .products h3 {
+        min-height: 48px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .features {
+        padding: 26px 0;
+    }
+
+    .features-header {
+        margin-bottom: 24px;
+    }
+
+    .features-header__title {
+        font-size: 22px;
+    }
+
+    .fetures-header__subtitle {
+        min-height: 30px;
+    }
+
+    .products {
+        padding: 29px 0 18px 0;
+    }
+
+    .products__block {
+        margin-bottom: 20px;
+    }
+
+    .products__img {
+        min-height: 200px;
+        margin-bottom: 20px;
+    }
+
+    .products h3 {
+        margin-bottom: 14px;
+    }
+
+    .products button {
+        margin-bottom: 10px;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .features-header__block {
+        display: block;
+        width: 100%;
+    }
+
+    .products {
+        padding-bottom: 0;
+    }
+
+    .products__block {
+        margin-right: 0;
+    }
 }
