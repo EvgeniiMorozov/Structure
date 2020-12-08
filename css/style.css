@@ -119,8 +119,10 @@ p {
     margin-left: 12px;
 }
 .products__button-o {
+    background-color: transparent;
     border: 1px solid #373737;
     border-radius: 2px;
+    opacity: 0.5;
     outline: none;
     cursor: pointer;
     opacity: 0.5;
