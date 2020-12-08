@@ -77,7 +77,6 @@ p {
 /*   Блок "Наша продукция"   */
 .products {
     background-color: #ffffff;
-    border: 1px solid green;
     text-align: center;
     padding: 58px 0 72px 0;
 }
@@ -89,6 +88,7 @@ p {
     text-transform: uppercase;
     margin-bottom: 50px;
 }
+
 .products__title::after {
     content: '';
     display: block;
@@ -99,20 +99,25 @@ p {
 }
 
 .products__block {
-    border: 1px solid brown;
+    margin-right: 52px;
+    margin-bottom: 36px;
 }
 
 .products__img {
-    border: 1px solid brown;
     min-height: 287px;
+    margin-bottom: 20px;
 }
 
-.products__name {
+.products h3 {
     color: #313131;
     font-size: 20px;
     font-weight: 500;
+    margin-bottom: 28px;
 }
 
+.products button {
+    margin-left: 12px;
+}
 .products__button-o {
     border: 1px solid #373737;
     border-radius: 2px;
@@ -166,17 +171,16 @@ p {
 }
 
 /*   Эффекты кнопок при нажатии   */
-
 .products__button-o:focus {
-     border: 1px solid #373737;
-     background-color: #ffdba0;
-     transform: scaleX(1);
+    border: 1px solid #373737;
+    background-color: #ffdba0;
+    transform: scaleX(1);
 }
 
 .products__button-o:focus::after {
     content: '';
     display: block;
-    background-color:#ff4800;
+    background-color: #ff4800;
     transform: scaleX(0);
     transition: all 0.7s;
     width: 100%;
@@ -198,5 +202,3 @@ p {
     width: 100%;
     height: 2px;
 }
-
-
