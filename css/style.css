@@ -1,0 +1,45 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+/*   Блок "Превосходства"   */
+.features {
+    /* border: 1px solid green; */
+    background-color: #f4f4f4;
+}
+
+.features-header {
+    display: flex;
+    justify-content: center;
+}
+
+.features-header__block {
+    border: 1px solid red;
+    width: 33.333%;
+
+    text-align: center;
+}
+
+.features-header__title {
+    font-family: 'Roboto-Black';
+    font-size: 36px;
+    color: #f39003;
+}
+
+.features-header__subtitle {
+    font-size: 16px;
+    color: #373737;
+}
