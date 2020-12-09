@@ -43,3 +43,34 @@ p {
     font-size: 16px;
     color: #373737;
 }
+
+/*   Блок описания превосходств   */
+.features-topics {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-bottom: 55px;
+
+    border: 1px solid orangered;
+}
+
+.features-topics__block {
+    width: 28%;
+    display: flex;
+    justify-content: space-between;
+    padding: 28px 18px 28px 12px;
+    margin-top: 30px;
+
+    background-color: #ffffff;
+    border: 1px solid green;
+}
+
+.features-topics__img {
+    /* width: %; */
+    /* text-align: center; */
+    margin-right: 1%;
+}
+
+.features-topics__text {
+    width: 85%;
+}
