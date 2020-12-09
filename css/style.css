@@ -111,7 +111,7 @@ p {
 
 .product-cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-flow: row wrap;
     align-items: center;
 
@@ -130,7 +130,7 @@ button {
     font-family: 'Roboto';
     font-size: 15px;
     color: #ffffff;
-    
+
     background-color: #ff9d00;
     border: 1px solid #ff9d00;
     border-radius: 4px;
