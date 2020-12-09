@@ -17,7 +17,6 @@ p {
 
 /*   Блок "Превосходства"   */
 .features {
-    /* border: 1px solid green; */
     background-color: #f4f4f4;
 }
 
@@ -27,7 +26,6 @@ p {
 }
 
 .features-header__block {
-    border: 1px solid red;
     width: 33.333%;
 
     text-align: center;
@@ -48,29 +46,39 @@ p {
 .features-topics {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-bottom: 55px;
-
-    border: 1px solid orangered;
 }
 
 .features-topics__block {
     width: 28%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 28px 18px 28px 12px;
     margin-top: 30px;
 
     background-color: #ffffff;
-    border: 1px solid green;
 }
 
 .features-topics__img {
-    /* width: %; */
-    /* text-align: center; */
     margin-right: 1%;
+}
+
+.features-topics__img img {
+    max-width: 100%;
 }
 
 .features-topics__text {
     width: 85%;
+}
+
+.features-topics__title {
+    font-family: 'Roboto-Bold';
+    font-size: 15px;
+}
+
+.features-topics__description {
+    font-family: 'Roboto-Light';
+    font-size: 14px;
 }
