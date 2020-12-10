@@ -150,6 +150,9 @@ button {
     border: 1px solid #ff9d00;
     border-radius: 4px;
     opacity: 1;
+
+    outline: 0;
+    cursor: pointer;
 }
 
 .button-o {
@@ -160,4 +163,26 @@ button {
     background-color: transparent;
     border: 1px solid #373737;
     opacity: 0.5;
+}
+
+/*   Эффекты кнопок при наведении и нажатии на них   */
+
+button:hover {
+    box-shadow: 10px 10px 10px rgba(255, 166, 0, 0.479);
+}
+
+.button-o:hover {
+    box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.589);
+}
+
+button:focus {
+    color: rgb(66, 66, 66);
+    background-color: #ff9900;
+    box-shadow: 5px 5px 8px rgba(255, 166, 0, 0.795);
+}
+
+.button-o:focus {
+    color: rgb(66, 66, 66);
+    background-color: transparent;
+    box-shadow: 5px 5px 8px rgba(90, 90, 90, 0.795);
 }
