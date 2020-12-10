@@ -17,6 +17,8 @@ p {
 
 /*   Блок "Превосходства"   */
 .features {
+    padding: 50px 0;
+
     background-color: #f4f4f4;
 }
 
@@ -87,12 +89,15 @@ p {
 
 /*   Блок "Наша продукция"   */
 .products {
+    padding: 58px 0 72px 0;
+
     background-color: #ffffff;
 }
 
 .products__title {
-    text-align: center;
+    margin-bottom: 40px;
 
+    text-align: center;
     font-family: 'Roboto';
     font-size: 27px;
     font-weight: 700;
@@ -118,7 +123,17 @@ p {
     text-align: center;
 }
 
-.products_name {
+.product-cards__block {
+    padding: 16px 0;
+}
+
+.products__img {
+    min-height: 316px;
+}
+
+.products__name {
+    margin-bottom: 28px;
+
     font-size: 20px;
     font-weight: 500;
     color: #313131;
@@ -138,6 +153,8 @@ button {
 }
 
 .button-o {
+    margin-right: 12px;
+
     color: #373737;
 
     background-color: transparent;
