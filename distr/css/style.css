@@ -1,0 +1,124 @@
+@font-face {
+  font-family: "ProximaNova-Regular";
+  font-display: swap;
+  src: url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  font-family: "ProximaNova-Regular", sans-serif;
+  color: #000000;
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.header {
+  margin: 100px 0 125px 0;
+}
+
+.header h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.main {
+  margin-bottom: 85px;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.cards__block {
+  text-align: center;
+  border: 1px solid rgba(128, 128, 128, 0.384);
+}
+
+.cards__block:hover {
+  -webkit-box-shadow: 0 0 10px gray;
+          box-shadow: 0 0 10px gray;
+}
+
+.cards__img {
+  margin-bottom: 25px;
+}
+
+.cards__img img {
+  max-width: 100%;
+}
+
+.cards__name {
+  margin-bottom: 25px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.cards__price {
+  margin-bottom: 25px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+button {
+  margin-bottom: 15px;
+  padding: 23px 74px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #23bac1;
+  background-color: transparent;
+  border: 1px solid #23bac1;
+  cursor: pointer;
+  outline: 0;
+}
+
+button:hover {
+  -webkit-box-shadow: 0 0 20px #7fa8ff;
+          box-shadow: 0 0 20px #7fa8ff;
+  background-color: #9eeaec;
+}
+
+button:focus {
+  color: #0f757a;
+  -webkit-box-shadow: 0 0 8px #54f8c2;
+          box-shadow: 0 0 8px #54f8c2;
+  background-color: #56e2e7;
+}
+
+@media screen and (max-width: 960px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .cards {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@supports (-webkit-appearance:none){
+
+}
+
+ @media screen and (max-width: 960px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
