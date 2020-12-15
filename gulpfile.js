@@ -60,7 +60,7 @@ function browserSync(params) {
 function html() {
     return src(path.src.html)
         .pipe(fileinclude())
-        .pipe(webphtml())
+        // .pipe(webphtml())
         .pipe(dest(path.build.html))
         .pipe(browsersync.stream())
 }
@@ -109,13 +109,13 @@ function js() {
 
 function images() {
     return src(path.src.img)
-        .pipe(
-            webp({
-                quality: 70
-            })
-        )
-        .pipe(dest(path.build.img))
-        .pipe(src(path.src.img))
+        // .pipe(
+        //     webp({
+        //         quality: 70
+        //     })
+        // )
+        // .pipe(dest(path.build.img))
+        // .pipe(src(path.src.img))
         .pipe(
             imagemin({
                 progressive: true,
