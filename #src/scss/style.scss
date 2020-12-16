@@ -11,7 +11,12 @@
 
 @import "fonts";
 
-
+// Размер длины контейнера под разные разрешения экрана
+$xl: 1140px; // 1366px и выше
+$lg: 960px; // 1024px
+$md: 720px;
+$sm: 540px;
+$xs: 320px;
 $btn-color: #23bac1;
 
 body {
@@ -27,12 +32,15 @@ p {
 }
 
 .container {
-    max-width: 1140px;
+    max-width: $xl;
     margin: 0 auto;
 
-    // @media screen and (max-width: 960px) {
-    //     max-width: 960px;
-    // }
+    @media (min-width: 820px) and (max-width: 1024px) {
+        max-width: $lg;
+    }
+    @media (min-width: 425px) and (max-width: 820px) {
+        max-width: $md;
+    }
 }
 
 .header {
@@ -51,23 +59,35 @@ p {
 .cards {
     display: flex;
     justify-content: space-around;
-    flex-basis: 570px;
     background-color: aquamarine;
 
-    // @media screen and (max-width: 960px) {
-    //     flex-wrap: wrap;
-    // }
+    @media (min-width: 425px) and (max-width: 820px) {
+        flex-direction: column;
+    }
 
     &__box {
         display: flex;
-        justify-content: space-between;
-        flex-basis: 263px;
+        justify-content: space-around;
+        flex-basis: $xl/2;
         background-color: coral;
+
+        @media (min-width:820px) and (max-width: 1024px) {
+            flex-basis: $lg/2;
+        }
+        @media (min-width: 425px) and (max-width: 820px) {
+            flex-basis: $md/2;
+        }
     }
 
     &__block {
+        flex-basis: 263px;
         text-align: center;
         border: 1px solid rgba(243, 161, 161, 0.384);
+        border: 1px solid black;
+
+        @media (min-width: 820px) and (max-width: 1024px) {
+            flex-basis: 200px;
+        }
     }
 
     &__block:hover {
@@ -77,9 +97,9 @@ p {
     &__img {
         margin-bottom: 25px;
 
-        // img {
-        //     // max-width: 100%;
-        // }
+        img {
+            max-width: 100%;
+        }
     }
 
     &__text {
@@ -89,11 +109,20 @@ p {
         align-items: center;
         align-content: center;
         height: 200px;
+
+        @media (min-width: 820px) and (max-width: 1024px) {}
     }
 
     &__name {
+        max-width: 250px;
+        max-height: 32px;
+        padding: 0 15px;
         font-size: 16px;
         font-weight: 300;
+
+        @media (min-width: 820px) and (max-width: 1024px) {
+            max-width: 150px;
+        }
     }
 
     &__price {
@@ -103,6 +132,7 @@ p {
 }
 
 button {
+    align-self: center;
     margin-bottom: 15px;
     padding: 23px 74px;
     font-size: 13px;
@@ -123,5 +153,9 @@ button {
         color: #0f757a;
         box-shadow: 0 0 8px rgb(84, 248, 194);
         background-color: #56e2e7;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        padding: 16px 50px;
     }
 }
