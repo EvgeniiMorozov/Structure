@@ -1,4 +1,5 @@
 body {
+    box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     margin: 0;
 }
@@ -11,7 +12,7 @@ p {
 }
 
 .container {
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
@@ -20,11 +21,22 @@ p {
     padding: 50px 0;
 
     background-color: #f4f4f4;
+
+    border: 1px solid red;
+}
+
+.features__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .features-header {
     display: flex;
     justify-content: center;
+
+    margin-bottom: 37px;
+    border: 1px solid black;
 }
 
 .features-header__block {
@@ -46,25 +58,46 @@ p {
 
 /*   Блок описания превосходств   */
 .features-topics {
+    flex-basis: 294px;
+
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-bottom: 55px; */
+
+    background-color: aquamarine;
+}
+
+.features-topics__box {
+    display: flex;
     justify-content: space-around;
-    padding-bottom: 55px;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.olive {
+    background-color: olive;
 }
 
 .features-topics__block {
-    width: 28%;
+    flex-basis: 294px;
+
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 28px 18px 28px 12px;
-    margin-top: 30px;
 
     background-color: #ffffff;
+
+    border: 1px solid green;
 }
 
 .features-topics__img {
-    margin-right: 1%;
+    flex-basis: 57px;
+    text-align: center;
 }
 
 .features-topics__img img {
@@ -72,7 +105,7 @@ p {
 }
 
 .features-topics__text {
-    width: 85%;
+    flex-basis: 202px;
 }
 
 .features-topics__title {
@@ -87,102 +120,31 @@ p {
 
 /*   Конец блока "Преимущества"   */
 
-/*   Блок "Наша продукция"   */
-.products {
-    padding: 58px 0 72px 0;
+/* Блок медиа-запросов */
+@media screen and (max-width: 990px) {
+    .container {
+        max-width: 720px;
+    }
 
-    background-color: #ffffff;
-}
+    .features-topics {
+        /* flex-basis: 618px; */
+        flex-direction: row;
+        justify-content: space-evenly;
+        /* align-items: center; */
+    }
 
-.products__title {
-    margin-bottom: 40px;
+    .features-topics__box {
+        flex-basis: 294px;
+        flex-direction: column;
+        justify-content: space-evenly;
+        /* align-items: center; */
+        /* align-content: center; */
+    }
 
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 27px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-.products__title::after {
-    content: '';
-
-    display: block;
-    height: 6px;
-    margin-top: 12px;
-
-    background: url(../img/line-1.png) center no-repeat;
-}
-
-.product-cards {
-    display: flex;
-    justify-content: space-around;
-    flex-flow: row wrap;
-    align-items: center;
-
-    text-align: center;
-}
-
-.product-cards__block {
-    padding: 16px 0;
-}
-
-.products__img {
-    min-height: 316px;
-}
-
-.products__name {
-    margin-bottom: 28px;
-
-    font-size: 20px;
-    font-weight: 500;
-    color: #313131;
-}
-
-button {
-    padding: 17px 26px;
-
-    font-family: 'Roboto';
-    font-size: 15px;
-    color: #ffffff;
-
-    background-color: #ff9d00;
-    border: 1px solid #ff9d00;
-    border-radius: 4px;
-    opacity: 1;
-
-    outline: 0;
-    cursor: pointer;
-}
-
-.button-o {
-    margin-right: 12px;
-
-    color: #373737;
-
-    background-color: transparent;
-    border: 1px solid #373737;
-    opacity: 0.5;
-}
-
-/*   Эффекты кнопок при наведении и нажатии на них   */
-
-button:hover {
-    box-shadow: 10px 10px 10px rgba(255, 166, 0, 0.479);
-}
-
-.button-o:hover {
-    box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.589);
-}
-
-button:focus {
-    color: rgb(66, 66, 66);
-    background-color: #ff9900;
-    box-shadow: 5px 5px 8px rgba(255, 166, 0, 0.795);
-}
-
-.button-o:focus {
-    color: rgb(66, 66, 66);
-    background-color: transparent;
-    box-shadow: 5px 5px 8px rgba(90, 90, 90, 0.795);
+    .features-topics__block {
+        flex-basis: 132px;
+        margin-bottom: 15px;
+        /* padding: 28px 18px 28px 12px; */
+    }
+    
 }
