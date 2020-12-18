@@ -118,6 +118,10 @@ p {
         max-width: 720px;
     }
 
+    .features-header__title {
+        font-size: 30px;
+    }
+
     .features-topics {
         flex-direction: row;
         justify-content: space-evenly;
