@@ -40,7 +40,7 @@ p {
 }
 
 .features-header__block {
-    width: 33.333%;
+    flex-basis: 33.333%;
 
     text-align: center;
 }
@@ -139,12 +139,34 @@ p {
         justify-content: space-evenly;
         /* align-items: center; */
         /* align-content: center; */
+        height: 456px;
     }
 
     .features-topics__block {
         flex-basis: 132px;
         margin-bottom: 15px;
-        /* padding: 28px 18px 28px 12px; */
+        padding: 28px 18px 28px 12px;
     }
-    
+    .features-topics__title {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 601px) {
+    .container {
+        max-width: 320px;
+    }
+
+    .features-header {
+        flex-direction: column;
+    }
+
+    .features-header__block {
+        flex-basis: 100%;
+        margin-bottom: 15px;
+    }
+
+    .features-topics {
+        flex-direction: column;
+    }
 }
